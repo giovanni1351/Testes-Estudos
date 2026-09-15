@@ -15,3 +15,12 @@
  deposito :100
  deposito :1000
  deposito :900
+ deposito :100
+ deposito :1000
+ deposito :900
+ deposito :100
+ deposito :1000
+ deposito :900
+deposito :100 saldo: 1100
+saque :1000 saldo: 0
+saque :900 saldo: 100

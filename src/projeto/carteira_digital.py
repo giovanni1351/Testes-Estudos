@@ -9,11 +9,11 @@ class CarteiraDigital:
     def depositar(self, valor: float):
         self.saldo += valor
         with open(self.log_path, "a") as f:
-            f.write(f" deposito :{valor}\n")
+            f.write(f"deposito :{valor} saldo: {self.saldo}\n")
 
     def sacar(self, valor: float):
         if valor > self.saldo:
-            raise SaldoInsuficienteError
+            raise SaldoInsuficienteError("saldo insuficiente")
         self.saldo -= valor
         with open(self.log_path, "a") as f:
-            f.write(f" deposito :{valor}\n")
+            f.write(f"saque :{valor} saldo: {self.saldo}\n")
