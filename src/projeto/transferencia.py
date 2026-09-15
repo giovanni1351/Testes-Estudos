@@ -1,4 +1,4 @@
-from carteira_digital import CarteiraDigital
+from projeto.carteira_digital import CarteiraDigital
 
 
 def transferir(origem: CarteiraDigital, destino: CarteiraDigital, valor: float):

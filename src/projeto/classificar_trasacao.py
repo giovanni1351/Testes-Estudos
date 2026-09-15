@@ -1,7 +1,7 @@
 def classificar_transacao(valor: float):
     if valor < 100:
-        return " pequena "
+        return "pequena"
     elif valor < 1000:
-        return " media "
+        return "media"
     else:
-        return " grande "
+        return "grande"

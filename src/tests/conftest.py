@@ -9,6 +9,10 @@ from projeto.carteira_digital import CarteiraDigital
 def carteira():
     return CarteiraDigital(saldo_inicial=1000)
 
+@pytest.fixture
+def carteiras():
+    return CarteiraDigital(saldo_inicial=1000),CarteiraDigital(saldo_inicial=0)
+
 
 @pytest.fixture(scope="function")
 def carteira_com_log():
@@ -22,3 +26,5 @@ def carteira_com_log():
 
     if arquivo.exists:
         arquivo.unlink(missing_ok=True)
+
+
